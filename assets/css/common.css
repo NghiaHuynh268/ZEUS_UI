@@ -1,0 +1,31 @@
+.section-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  color: #000000;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.section-describe {
+  max-width: 800px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #532c59;
+  margin: auto;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.btn {
+  padding: 16px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: #532c59;
+  transition: all 0.3s;
+  border-radius: 15px;
+}
+.btn:hover {
+  background-color: #ba7cc4;
+}

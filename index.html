@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap4.min.css" />
+    <script src="./assets/js/bootstrap4.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/font.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/common.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-wrap">
+          <div class="header-left">
+            <a href="#">Home</a>
+            <a href="#">University</a>
+            <a href="#">Courses</a>
+          </div>
+          <div class="header-mid">
+            <img src="./assets/images/Flash.png" alt="" />
+            <p class="brand">zeus ui</p>
+          </div>
+          <div class="header-right">
+            <a href="#">Use cases</a>
+            <a href="#"
+              >Plans <img src="./assets/images/Icon - R.png" alt=""
+            /></a>
+            <a href="#">Resources</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="slider">
+        <div class="container">
+          <div class="slider-wrap text-center">
+            <p class="slider-brand">zeus ui</p>
+            <h1 class="slider-title">Create & sell your NFTs today</h1>
+            <p class="slider-describe">
+              Velit, odio bibendum eu, viverra sit laoreet posuere. Ut
+              scelerisque posuere massa amet. Ornare lacinia vitae at vestibulum
+              morbi. Volutpat libero curabitur feugiat risus dui pulvinar.
+              Elementum.
+            </p>
+            <button class="btn">Let's sell</button>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="logo">
+          <img src="./assets/images/logo1.png" alt="" />
+          <img src="./assets/images/logo2.png" alt="" />
+          <img src="./assets/images/logo3.png" alt="" />
+          <img src="./assets/images/logo4.png" alt="" />
+          <img src="./assets/images/logo5.png" alt="" />
+          <img src="./assets/images/logo6.png" alt="" />
+        </div>
+        <div class="section-collections">
+          <h2 class="section-title">Hottest Collections</h2>
+          <p class="section-describe">
+            Risus commodo id odio turpis pharetra elementum. Pulvinar porta
+            porta feugiat scelerisque in elit. Morbi rhoncus, tellus, eros
+            consequat magna semper orci a tincidunt.
+          </p>
+          <div class="look-for">
+            <input
+              type="text"
+              id="search"
+              placeholder="Search NFT"
+              oninput="searchItem()"
+            />
+            <img src="./assets/images/lookfor.png" alt="" />
+          </div>
+          <div class="collections-list"></div>
+          <div class="change-form">
+            <button class="hide-form" type="button" onclick="hideForm()">
+              <img src="./assets/images/x.png" alt="" />
+            </button>
+            <input type="text" class="change-name" />
+            <textarea class="change-describe"></textarea>
+            <button class="change-btn" onclick="saveChange()">Save</button>
+            <input type="text" id="save-index" />
+          </div>
+          <button class="add-new-nft" onclick="showAddForm()">
+            ADD NEW NFT
+          </button>
+          <div class="add-form">
+            <button class="hide-add-form" onclick="hideAddForm()">
+              <img src="./assets/images/x.png" alt="" />
+            </button>
+            <input
+              type="text"
+              class="new-nft-img"
+              placeholder="Enter new NFT image's link"
+            />
+            <input
+              type="text"
+              class="new-nft-name"
+              placeholder="Enter new NFT's name"
+            />
+            <textarea
+              class="new-nft-describe"
+              placeholder="Enter new NFT's describe"
+            ></textarea>
+            <button class="save-new-nft" onclick="saveNew()">Save</button>
+          </div>
+        </div>
+        <div class="section-ourteam">
+          <h2 class="section-title">Our Team</h2>
+          <p class="section-describe">
+            Risus commodo id odio turpis pharetra elementum. Pulvinar porta
+            porta feugiat scelerisque in elit. Morbi rhoncus, tellus, eros
+            consequat magna semper orci a tincidunt.
+          </p>
+          <div class="ourteam-list"></div>
+        </div>
+        <div class="section-weprovide">
+          <h2 class="section-title">We Provide</h2>
+          <p class="section-describe">
+            Risus commodo id odio turpis pharetra elementum. Pulvinar porta
+            porta feugiat scelerisque in elit. Morbi rhoncus, tellus, eros
+            consequat magna semper orci a tincidunt.
+          </p>
+          <div class="weprovide-list"></div>
+        </div>
+        <div class="section-testimonials">
+          <h2 class="section-title">Testimonials</h2>
+          <div class="testimonials-list">
+            <div class="testimonials-list1"></div>
+            <div class="testimonials-list2"></div>
+            <div class="testimonials-list3"></div>
+          </div>
+        </div>
+        <div class="section-employees">
+          <h2 class="section-title">Employees</h2>
+          <div class="employees-list"></div>
+
+          <div class="change-employees-form">
+            <button
+              class="hide-employees-form"
+              type="button"
+              onclick="hideEmployeesForm()"
+            >
+              <img src="./assets/images/x.png" alt="" />
+            </button>
+            <input
+              type="text"
+              class="change-employees-name"
+              placeholder="Enter employee's name"
+            />
+            <input
+              type="text"
+              class="change-employees-age"
+              placeholder="Enter employee's age"
+            />
+            <input
+              type="text"
+              class="change-employees-salary"
+              placeholder="Enter employee's salary"
+            />
+            <button class="change-employees-btn" onclick="saveInfoChange()">
+              Save
+            </button>
+            <input type="text" id="save-employees-index" />
+          </div>
+        </div>
+        <div class="section-faquestions">
+          <div class="faquestions-left">
+            <h2 class="section-title text-left">Frequently Asked Questions</h2>
+            <p class="section-describe text-left">
+              Risus commodo id odio turpis pharetra elementum. Pulvinar porta
+              porta feugiat scelerisque in elit. Morbi rhoncus, tellus, eros
+              consequat magna semper orci a tincidunt.
+            </p>
+          </div>
+          <div class="faquestions-right">
+            <div class="faquestions-list1"></div>
+            <div class="faquestions-list2"></div>
+          </div>
+        </div>
+        <div class="section-tag text-center">
+          <h2 class="section-title">Ready to sell your NFTs?</h2>
+          <p class="section-describe">
+            Risus commodo id odio turpis pharetra elementum. Pulvinar porta
+            porta feugiat scelerisque in elit. Morbi rhoncus, tellus, eros
+            consequat magna semper orci a tincidunt.
+          </p>
+          <button class="btn">Sell right now</button>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrap">
+          <div class="footer-opt">
+            <div class="footer-left">
+              <a href="#">Terms & Conditions</a>
+              <a href="#">Privacy Policy</a>
+            </div>
+            <div class="footer-mid">
+              <img src="./assets/images/Flash.png" alt="" />
+              <p class="brand">zeus ui</p>
+            </div>
+            <div class="footer-right">
+              <a href="#">Cookies</a>
+              <a href="#">Refunds</a>
+              <a href="#">License</a>
+            </div>
+          </div>
+          <p class="footer-footer text-center">Copyright 2022 Zeus UI</p>
+        </div>
+      </div>
+    </footer>
+    <div class="blur-background" onclick="hideAll()"></div>
+    <script type="module" src="./assets/js/index.js"></script>
+  </body>
+</html>
